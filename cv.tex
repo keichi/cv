@@ -1,0 +1,128 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Keichi}{Takahashi}
+\title{Ph.D. Candidate at Osaka University}
+\address{5-1 Mihogaoka, Ibaraki}{560-0085 Osaka}{Japan}
+\phone[mobile]{+81-80-4020-6553}
+\email{keichi.t@me.com}                               % optional, remove / comment the line if not wanted
+\homepage{keichi.net}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{keichi}                        % optional, remove / comment the line if not wanted
+\social[github]{keichi}                              % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2010--2014}{B.Sc. in Electronic and Information Engineering}{Osaka University}{Osaka}{}%
+{Bachelor Thesis: ``Design and Implementation of Software Defined Networking Controller for Accelerating Collective Reduction Operation in MPI``}
+\cventry{2014--2016}{M.Sc. in Information Science}{Osaka University}{Osaka}{}%
+{Master Thesis: ``A Cross-layer Architecture for Integrating SDN-enabled Interconnect with MPI Library``}
+\cventry{2016--Present}{Ph.D. in Information Science  Engineering}{Osaka University}{Osaka}{}%
+{}
+
+\section{Work Experience}
+
+\cventry{2010--2012}{Software Engineer}{Crev Inc.}{Osaka}{}%
+{Worked on factory automation, image processing and signal processing%
+\begin{itemize}%
+\item Designed and developed an algorithm to detect emission spectrum lines
+    from plasma spectroscopic data of plasma
+\item Designed and developed an algorithm to automatically analyze the
+    surface texturing of solar cells from electron microscopic images
+\item Developed a driver for a USB-connected pressure sensors using libusb
+\end{itemize}}
+
+\cventry{2013--2014}{Software Engineer}{Fenrir Inc.}{Osaka}{}%
+{Worked on Sleipnir, a Chromium-based web browser%
+\begin{itemize}%
+\item Implemented several UI interactions and animations together with a UI/UX designer
+\item Achievement 2;
+\item Achievement 3.
+\end{itemize}}
+
+\cventry{2014--Present}{Freelance Software Engineer}{}{Osaka}{}%
+{Worked on web applications%
+\begin{itemize}%
+\item Implemented a Scala library using macro to automatically generate API
+    endpoint codes based on the model definition
+\item Achievement 2;
+\item Achievement 3.
+\end{itemize}}
+
+\cventry{2017--Present}{Cloud Architect}{Plen Robotics Inc.}{Osaka}{}%
+{Designing and implementing server-side software and infrastructure for IoT devies}
+
+\section{Languages}
+\cvitemwithcomment{Japanese}{Native Proficiency}{Comment}
+\cvitemwithcomment{English}{Professional Proficiency}{Comment}
+\cvitemwithcomment{German}{Limited Proficiency}{Comment}
+
+\section{Computer skills}
+\cvitem{Computer Languages}{Description}
+
+\section{Interests}
+\cvitem{hobby 1}{Description}
+\cvitem{hobby 2}{Description}
+\cvitem{hobby 3}{Description}
+
+\section{Extra 1}
+\cvlistitem{Item 1}
+\cvlistitem{Item 2}
+\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+\section{Extra 2}
+\cvlistdoubleitem{Item 1}{Item 4}
+\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.
