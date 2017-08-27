@@ -15,7 +15,7 @@
 \address{5-1 Mihogaoka, Ibaraki}{560-0085 Osaka}{Japan}
 \phone[mobile]{+81-80-4020-6553}
 \email{keichi.t@me.com}                               % optional, remove / comment the line if not wanted
-\homepage{keichi.net}                         % optional, remove / comment the line if not wanted
+\homepage{https://keichi.net}                         % optional, remove / comment the line if not wanted
 \social[linkedin]{keichi}                        % optional, remove / comment the line if not wanted
 \social[github]{keichi}                              % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
@@ -37,12 +37,14 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2010--2014}{B.Sc. in Electronic and Information Engineering}{Osaka University}{Osaka}{}%
-{Bachelor Thesis: ``Design and Implementation of Software Defined Networking Controller for Accelerating Collective Reduction Operation in MPI``}
-\cventry{2014--2016}{M.Sc. in Information Science}{Osaka University}{Osaka}{}%
-{Master Thesis: ``A Cross-layer Architecture for Integrating SDN-enabled Interconnect with MPI Library``}
-\cventry{2016--Present}{Ph.D. in Information Science  Engineering}{Osaka University}{Osaka}{}%
-{}
+\cventry{2010--2014}{B.Eng.\ in Electronic and Information Engineering}{Osaka University}{Osaka}{}%
+{Bachelor Thesis: ``Design and Implementation of Software Defined Networking Controller for Accelerating Collective Reduction Operation in MPI''}
+\cventry{2014--2016}{M.Sc.\ in Information Science}{Osaka University}{Osaka}{}%
+{Master Thesis: ``A Cross-layer Architecture for Integrating SDN-enabled
+Interconnect with MPI Library''\newline{}%
+Humanware Innovation Program Scholarship}
+\cventry{2016--Present}{Ph.D.\ in Information Science}{Osaka University}{Osaka}{}%
+{Humanware Innovation Program Scholarship}
 
 \section{Work Experience}
 
@@ -54,40 +56,47 @@
 \item Designed and developed an algorithm to automatically analyze the
     surface texturing of solar cells from electron microscopic images
 \item Developed a driver for a USB-connected pressure sensors using libusb
+\item Took part in development of a factory automation system for a food plant
 \end{itemize}}
 
 \cventry{2013--2014}{Software Engineer}{Fenrir Inc.}{Osaka}{}%
 {Worked on Sleipnir, a Chromium-based web browser%
 \begin{itemize}%
 \item Implemented several UI interactions and animations together with a UI/UX designer
-\item Achievement 2;
-\item Achievement 3.
+\item Implemented new features involving interaction between JavaScript and
+    C++
 \end{itemize}}
 
 \cventry{2014--Present}{Freelance Software Engineer}{}{Osaka}{}%
-{Worked on web applications%
+{Worked mainly on web applications%
 \begin{itemize}%
-\item Implemented a Scala library using macro to automatically generate API
+\item Developed a Scala library using macro to automatically generate API
     endpoint codes based on the model definition
-\item Achievement 2;
-\item Achievement 3.
+\item Implemented several REST API back-ends using Scala and Play framework
+\item Implemented several web application front-ends using React and AngularJS
 \end{itemize}}
 
 \cventry{2017--Present}{Cloud Architect}{Plen Robotics Inc.}{Osaka}{}%
-{Designing and implementing server-side software and infrastructure for IoT devies}
+{Designed server-side software and infrastructure for IoT devices%
+\begin{itemize}%
+\item Designed communication architecture between IoT devices and Cloud
+    based on REST and gRPC including server-side push
+\item Designed authentication and authorization mechanism
+\item Designed architecture for live streaming audio and video
+\item Designed third-party service integration using OAuth 2.0
+\end{itemize}}
 
 \section{Languages}
 \cvitemwithcomment{Japanese}{Native Proficiency}{Comment}
-\cvitemwithcomment{English}{Professional Proficiency}{Comment}
+\cvitemwithcomment{English}{Full Professional Proficiency}{Comment}
 \cvitemwithcomment{German}{Limited Proficiency}{Comment}
 
-\section{Computer skills}
-\cvitem{Computer Languages}{Description}
-
-\section{Interests}
-\cvitem{hobby 1}{Description}
-\cvitem{hobby 2}{Description}
-\cvitem{hobby 3}{Description}
+\section{Skills}
+\cvitem{Computer Languages}{Professional experience in C, C++, C\#,
+JavaScript, Python and Scala. Experience in Go, Haskell, Ruby and PHP.}
+\cvitem{Cluster Management}{Ansible (Configuration Management), Docker,
+QEMU/KVM + libvirt, Fluentd (Log Collection), Prometheus (Monitoring System),
+Kibana/Grafana (Visualization)}
 
 \section{Extra 1}
 \cvlistitem{Item 1}
