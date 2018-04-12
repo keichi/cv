@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[10pt,a4paper,sans]{moderncv}
 
 % moderncv themes
 \moderncvstyle{casual}
@@ -21,7 +21,7 @@
 % personal data
 \name{Keichi}{Takahashi}
 \title{Ph.D. Candidate at Osaka University}
-\address{5-1 Mihogaoka, Ibaraki}{560-0085 Osaka}{Japan}
+\address{5-1 Mihogaoka, Ibaraki}{567-0047 Osaka}{Japan}
 \phone[mobile]{+81-80-4020-6553}
 \email{keichi.t@me.com}                               % optional, remove / comment the line if not wanted
 \homepage{https://keichi.net}                         % optional, remove / comment the line if not wanted
@@ -46,84 +46,67 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2010--2014}{B.Eng.\ in Electronic and Information Engineering}{Osaka University}{Osaka}{}%
-{Bachelor Thesis: ``Design and Implementation of Software Defined Networking Controller for Accelerating Collective Reduction Operation in MPI''}
+
+\cventry{2016--Present}{Ph.D.\ in Information Science}{Osaka University}{Osaka}{}%
+{Humanware Innovation Program Scholarship}
+
 \cventry{2014--2016}{M.Sc.\ in Information Science}{Osaka University}{Osaka}{}%
 {Master Thesis: ``A Cross-layer Architecture for Integrating SDN-enabled
 Interconnect with MPI Library''\newline{}%
 Humanware Innovation Program Scholarship}
-\cventry{2016--Present}{Ph.D.\ in Information Science}{Osaka University}{Osaka}{}%
-{Humanware Innovation Program Scholarship}
+
+\cventry{2010--2014}{B.Eng.\ in Electronic and Information Engineering}{Osaka University}{Osaka}{}%
+{Bachelor Thesis: ``Design and Implementation of Software Defined Networking Controller for Accelerating Collective Reduction Operation in MPI''}
 
 \section{Work Experience}
 
-\cventry{2010--2012}{Software Engineer}{Crev Inc.}{Osaka}{}%
+\cventry{2014--Present}{Freelance Software Engineer}{}{Osaka}{}%
+{Mainly working on web applications%
+\begin{itemize}%
+\item Implemented several REST API back-ends using Scala and Play framework
+\item Implemented several web application front-ends using React and AngularJS
+\item Designed and developed a meta-programming library in Scala to
+    automatically generate API endpoints from model definition
+\item Designed an infrastructure for realt-time video streaming on AWS
+\end{itemize}}
+
+\cventry{2013--2014}{Software Engineer (part-time)}{Fenrir Inc.}{Osaka}{}%
+{Worked on Sleipnir, a Chromium-based web browser%
+\begin{itemize}%
+\item Implemented UI interactions and animations in cooperation with UI/UX designers
+\item Implemented several new features involving interoperation between
+    JavaScript and C++
+\end{itemize}}
+
+\cventry{2010--2012}{Software Engineer (part-time)}{Crev Inc.}{Osaka}{}%
 {Worked on factory automation, image processing and signal processing%
 \begin{itemize}%
 \item Designed and developed an algorithm to detect emission spectrum lines
     from plasma spectroscopic data of plasma
 \item Designed and developed an algorithm to automatically analyze the
     surface texturing of solar cells from electron microscopic images
-\item Developed a driver for a USB-connected pressure sensors using libusb
-\item Took part in development of a factory automation system for a food plant
-\end{itemize}}
-
-\cventry{2013--2014}{Software Engineer}{Fenrir Inc.}{Osaka}{}%
-{Worked on Sleipnir, a Chromium-based web browser%
-\begin{itemize}%
-\item Implemented several UI interactions and animations together with a UI/UX designer
-\item Implemented new features involving interaction between JavaScript and
-    C++
-\end{itemize}}
-
-\cventry{2014--Present}{Freelance Software Engineer}{}{Osaka}{}%
-{Worked mainly on web applications%
-\begin{itemize}%
-\item Developed a Scala library using macro to automatically generate API
-    endpoint codes based on the model definition
-\item Implemented several REST API back-ends using Scala and Play framework
-\item Implemented several web application front-ends using React and AngularJS
-\end{itemize}}
-
-\cventry{2017--Present}{Cloud Architect}{Plen Robotics Inc.}{Osaka}{}%
-{Designed server-side software and infrastructure for IoT devices%
-\begin{itemize}%
-\item Designed communication architecture between IoT devices and Cloud
-    based on REST and gRPC including server-side push
-\item Designed authentication and authorization mechanism
-\item Designed architecture for live streaming audio and video
-\item Designed third-party service integration using OAuth 2.0
+\item Developed a user-space driver for a USB-connected pressure sensor
+\item Took part in development of a factory automation system for food plants
 \end{itemize}}
 
 \section{Languages}
-\cvitemwithcomment{Japanese}{Native Proficiency}{Comment}
-\cvitemwithcomment{English}{Full Professional Proficiency}{Comment}
-\cvitemwithcomment{German}{Limited Proficiency}{Comment}
+\cvitem{Japanese}{Native Proficiency}
+\cvitem{English}{Full Professional Proficiency}
+\cvitem{German}{Limited Proficiency}
 
 \section{Skills}
-\cvitem{Computer Languages}{Professional experience in C, C++, C\#,
-JavaScript, Python and Scala. Experience in Go, Haskell, Ruby and PHP.}
-\cvitem{Cluster Management}{Ansible (Configuration Management), Docker,
-QEMU/KVM + libvirt, Fluentd (Log Collection), Prometheus (Monitoring System),
-Kibana/Grafana (Visualization)}
+\cvitem{Programming Languages}{Professional programming experience in C, C++,
+C\#, JavaScript, Python and Scala. Experience in Go, Haskell, Ruby and PHP.}
+\cvitem{Parallel Computing}{Experience in MPI and OpenMP.}
+\cvitem{Server Administration}{Deployed and operated several small-scale
+computing clusters. Experience with software including (but not limited to):
+Slurm (Job Scheduler), Kubernetes (Container Orchestrator), Ansible
+(Configuration Management), Docker, QEMU/KVM, Fluentd (Log Collector),
+Prometheus (Monitoring System) and Kibana/Grafana (Visualization).}
 
-\section{Extra 1}
-\cvlistitem{Item 1}
-\cvlistitem{Item 2}
-\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+\newpage
 
-\section{Extra 2}
-\cvlistdoubleitem{Item 1}{Item 4}
-\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-
-\section{References}
-\begin{cvcolumns}
-  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-\end{cvcolumns}
-
+\section{Publications}
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
