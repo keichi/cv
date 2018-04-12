@@ -9,6 +9,15 @@
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+
+\usepackage{multibib}
+\newcites{article,proceedings,oral,patent}{%
+    {Journal},%
+    {International Conference (with Review)},%
+    {Poster and Oral Presentation (without Review)},%
+    {Patent}%
+}
+
 % personal data
 \name{Keichi}{Takahashi}
 \title{Ph.D. Candidate at Osaka University}
@@ -118,20 +127,20 @@ Kibana/Grafana (Visualization)}
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+\nocitearticle{*}
+\bibliographystylearticle{unsrt}
+\bibliographyarticle{article}
 
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\nociteproceedings{*}
+\bibliographystyleproceedings{unsrt}
+\bibliographyproceedings{proceedings}
+
+\nociteoral{*}
+\bibliographystyleoral{unsrt}
+\bibliographyoral{oral}
+
+\nocitepatent{*}
+\bibliographystylepatent{unsrt}
+\bibliographypatent{patent}
 
 \end{document}
-
-
-%% end of file `template.tex'.
