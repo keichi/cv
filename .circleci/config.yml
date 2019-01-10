@@ -4,8 +4,9 @@ jobs:
     docker:
       - image: paperist/alpine-texlive-ja
     steps:
-      - checkout
+      - run: apk add --no-cache ca-certificates
       - run: tlmgr install fontawesome multibib
+      - checkout
       - run: latexmk cv.tex
       - store_artifacts:
           path: cv.pdf
