@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: paperist/alpine-texlive-ja
+    steps:
+      - checkout
+      - run: tlmgr install fontawesome multibib
+      - run: latexmk cv.tex
+      - store_artifacts:
+          path: cv.pdf
