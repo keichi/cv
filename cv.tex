@@ -6,9 +6,7 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
+\setlength{\hintscolumnwidth}{3cm}
 
 \usepackage{multibib}
 \newcites{article,proceedings,oral,patent}{%
@@ -23,11 +21,11 @@
 \title{Ph.D. Candidate at Osaka University}
 \address{5-1 Mihogaoka, Ibaraki}{567-0047 Osaka}{Japan}
 \phone[mobile]{+81-80-4020-6553}
-\email{keichi.t@me.com}                               % optional, remove / comment the line if not wanted
-\homepage{https://keichi.net}                         % optional, remove / comment the line if not wanted
-\social[linkedin]{keichi}                        % optional, remove / comment the line if not wanted
-\social[github]{keichi}                              % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\email{keichi.t@me.com}
+\homepage{https://keichi.net}
+\social[linkedin]{keichi}
+\social[github]{keichi}
+\photo[64pt][0.4pt]{picture.jpg}
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -47,20 +45,34 @@
 
 \section{Education}
 
-\cventry{2016--Present}{Ph.D.\ in Information Science}{Osaka University}{Osaka}{}%
-{Humanware Innovation Program Scholarship}
-
-\cventry{2014--2016}{M.Sc.\ in Information Science}{Osaka University}{Osaka}{}%
-{Master Thesis: ``A Cross-layer Architecture for Integrating SDN-enabled
-Interconnect with MPI Library''\newline{}%
+\cventry{Apr.~2016--Mar.~2019\\(Expected)}{Ph.D.\ in Information Science}{Osaka University}{Osaka}{}%
+{Doctoral Dissertation: ``Programmable Interconnect Control Adaptive to Communication Pattern of Applications''\\%
+Advisors: Shinji Shimojo and Susumu Date\\%
 Humanware Innovation Program Scholarship}
 
-\cventry{2010--2014}{B.Eng.\ in Electronic and Information Engineering}{Osaka University}{Osaka}{}%
+\cventry{Apr.~2014--Mar.~2016}{M.Sc.\ in Information Science}{Osaka University}{Osaka}{}%
+{Master Thesis: ``A Cross-layer Architecture for Integrating SDN-enabled
+Interconnect with MPI Library''\\%
+Humanware Innovation Program Scholarship}
+
+\cventry{Apr.~2010--Mar.~2014}{B.Eng.\ in Electronic and Information Engineering}{Osaka University}{Osaka}{}%
 {Bachelor Thesis: ``Design and Implementation of Software Defined Networking Controller for Accelerating Collective Reduction Operation in MPI''}
 
 \section{Work Experience}
 
-\cventry{2014--Present}{Freelance Software Engineer}{}{Osaka}{}%
+\cventry{Jul.~2018--Dec.~2018}{Visiting Scholar}{Oak Ridge National
+Laboratory (ORNL)}{TN}{USA}%
+{%
+Worked on elastic in-situ workflow management
+\begin{itemize}%
+\item Contributed to ADIOS2, a high-performance data movement middleware
+    developed as a part of DoE's Exascale Computing Project~(ECP)
+\item Worked on a joint research project between the Japanese Aerospace
+    Exploration Agency~(JAXA) and ORNL
+\end{itemize}
+}
+
+\cventry{2014--2018}{Freelance Software Engineer}{}{Osaka}{}%
 {Mainly working on web applications%
 \begin{itemize}%
 \item Implemented several REST API back-ends using Scala and Play framework
