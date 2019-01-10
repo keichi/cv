@@ -11,4 +11,4 @@ jobs:
       - run: latexmk cv.tex
       - deploy:
           name: Deploy to S3
-          command: aws s3 sync cv.pdf s3://keichi.net/cv_takahashi.pdf
+          command: aws s3 cp cv.pdf s3://keichi.net/cv_takahashi.pdf
