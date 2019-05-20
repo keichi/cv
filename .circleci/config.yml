@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: paperist/alpine-texlive-ja
+      - image: paperist/alpine-texlive-ja:2017
     steps:
       - run: apk add --no-cache ca-certificates
       - run: apk add aws-cli --update-cache --allow-untrusted --repository http://dl-3.alpinelinux.org/alpine/edge/testing/
