@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: paperist/alpine-texlive-ja:2017
+      - image: paperist/alpine-texlive-ja:2022
     steps:
       - run: apk update && apk add git python3 python3-dev
       - run: pip3 install awscli
