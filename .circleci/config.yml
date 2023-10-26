@@ -4,9 +4,9 @@ jobs:
     docker:
       - image: paperist/alpine-texlive-ja:2022
     steps:
-      - run: apk update && apk add git python3 python3-dev
+      - run: apk update && apk add git python3 py3-pip
       - run: pip3 install awscli
-      - run: tlmgr install fontawesome multibib
+      - run: tlmgr install fontawesome fontawesome5 multibib
       - checkout
       - run: latexmk cv.tex
       - deploy:
