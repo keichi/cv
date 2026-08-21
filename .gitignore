@@ -238,3 +238,6 @@ TSWLatexianTemp*
 *.sta
 
 
+
+# Build output
+cv.pdf
