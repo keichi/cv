@@ -13,11 +13,9 @@
 \setlength{\hintscolumnwidth}{3cm}
 
 \usepackage{multibib}
-\newcites{article,proceedings,oral,patent}{%
-    {Journal},%
-    {International Conference (with Review)},%
-    {Poster and Oral Presentation (without Review)},%
-    {Patent}%
+\newcites{article,proceedings}{%
+    {Journal Articles},%
+    {International Conference Papers}%
 }
 
 % personal data
@@ -73,16 +71,13 @@ Scientific Data Group, Computer Science and Mathematics Division
 
 \cventry{Apr.~2016--Mar.~2019}{Ph.D.\ in Computer Science}{Osaka University}{Osaka}{}%
 {Doctoral Dissertation: ``Programmable Interconnect Control Adaptive to Communication Pattern of Applications''\\%
-Advisors: Shinji Shimojo and Susumu Date\\%
-Humanware Innovation Program Scholarship}
+Advisors: Shinji Shimojo and Susumu Date}
 
 \cventry{Apr.~2014--Mar.~2016}{M.Sc.\ in Computer Science}{Osaka University}{Osaka}{}%
 {Master Thesis: ``A Cross-layer Architecture for Integrating SDN-enabled
-Interconnect with MPI Library''\\%
-Humanware Innovation Program Scholarship}
+Interconnect with MPI Library''}
 
-\cventry{Apr.~2010--Mar.~2014}{B.Eng.\ in Electronics and Computer Engineering}{Osaka University}{Osaka}{}%
-{Bachelor Thesis: ``Design and Implementation of Software Defined Networking Controller for Accelerating Collective Reduction Operation in MPI''}
+\cventry{Apr.~2010--Mar.~2014}{B.Eng.\ in Electronics and Computer Engineering}{Osaka University}{Osaka}{}{}%
 
 \section{Professional Services}
 \cventry{2026}{The 38th International Conference on Scalable Scientific Data
@@ -105,33 +100,25 @@ Computing, Data and Analytics (HiPC 2023)}{Program Committee}{}{}{}
 
 \section{Awards}
 \cventry{Mar.~2026}{47th JSAP Outstanding Paper Award}{}{The Japan Society of
-Applied Physics (JSAP)}{}%
-{For ``Towards sub-10 nm spatial resolution by tender X-ray ptychographic coherent diffraction imaging''}
+Applied Physics (JSAP)}{}{}
 \cventry{May~2024}{Best Paper Award}{}{26th Workshop on Advances in Parallel and
-Distributed Computational Models (APDCM)}{}%
-{For ``Combining lossy compression with multi-level caching for data staging over network''}
+Distributed Computational Models (APDCM)}{}{}
 \cventry{May~2024}{19th IEICE Communications Society Best Paper Award}{}{Institute
 of Electronics, Information and Communication Engineers (IEICE) Communications
-Society}{}%
-{For ``Toward Predictive Modeling of Solar Power Generation for Multiple Power Plants''}
+Society}{}{}
 
-% \newpage
-% 
-% \section{Publications}
-% \nocitearticle{*}
-% \bibliographystylearticle{unsrt}
-% \bibliographyarticle{article}
-% 
-% \nociteproceedings{*}
-% \bibliographystyleproceedings{unsrt}
-% \bibliographyproceedings{proceedings}
-% 
-% \nociteoral{*}
-% \bibliographystyleoral{unsrt}
-% \bibliographyoral{oral}
-% 
-% \nocitepatent{*}
-% \bibliographystylepatent{unsrt}
-% \bibliographypatent{patent}
+\section{Selected Publications}
+
+% Selected from 18 journal articles and 53 international conference papers.
+% First-authored work, award-winning papers, and widely-used community software.
+% The complete list is available at https://keichi.dev/publications/
+
+\nocitearticle{Takahashi2025mdx,Koda2025,Ishiguro2024,Mehta2021,Godoy2020,Takahashi2018}
+\bibliographystylearticle{unsrt}
+\bibliographyarticle{article}
+
+\nociteproceedings{Takahashi2025,Takahashi2024,Takahashi2023a,Shimomura2022,Watanakeesuntorn2020}
+\bibliographystyleproceedings{unsrt}
+\bibliographyproceedings{proceedings}
 
 \end{document}
