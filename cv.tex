@@ -4,6 +4,10 @@
 \moderncvcolor{blue}
 \moderncvstyle{casual}
 
+% moderncv 2.6.1 no longer pulls in Latin Modern itself, and without it the sans
+% option falls back to Computer Modern Sans (CM Super).
+\usepackage{lmodern}
+
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
 \setlength{\hintscolumnwidth}{3cm}
